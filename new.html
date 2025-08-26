@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Application</title>
+    <link rel="icon" type="image/x-icon" href="/Smart Parking web app/favicon.ico">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('/download.jpg'), url('/download1.jpg'); /* Replace with your image URLs */
+            background-size: cover;
+            background-position: center;
+        
+            min-height: 100vh; /* Ensures body covers full viewport height */
+        }
+        .navbar {
+            position: fixed; /* Fixed position to stay at the top */
+            width: 100%; /* Full width */
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: rgba(10, 10, 10, 0.8); /* Slightly transparent background */
+            z-index: 1000; /* Ensure it stays on top of other content */
+        }
+
+        .nav-button {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: black;
+        }
+
+        main {
+            padding: 80px 20px 60px; /* Add padding to accommodate the fixed navbar and footer */
+            text-align: center;
+            color: white;
+          
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../new.html" class="nav-button">Home</a>
+        <a href="../Parking_1_booking/public/index.html" class="nav-button">Parking Spaces Booking</a>
+        <a href="../Parking_2_dashboard/index.html" class="nav-button">Management Dashboard</a>
+        <a href="../Parking_3_editing/index.html" class="nav-button">Editing</a>
+    </div>
+    <span><br><br><br></span>
+    <main>
+        <h1>Welcome to the Smart Parking Management System</h1>
+        <p>This is the Parking management portal.</p>
+    </main>
+    <footer>
+        &copy; ULTS 2024 Parking Space Web application. All rights reserved.
+    </footer>
+</body>
+</html>
